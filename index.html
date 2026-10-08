@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;color-scheme:light;--bg:#fbf8ff;--text:#2b2540;--body:#4a4163;--muted:#7a7192;--card:#ffffff;--border:#efe7ff;--line:#e3d4ff;--track:#efe7ff;--accent:#7c3aed;--nav:rgba(251,248,255,0.85);--shadow:0 10px 28px rgba(124,58,237,0.07);--hero:radial-gradient(circle at 12% 18%,rgba(167,139,250,0.35),transparent 45%),radial-gradient(circle at 88% 12%,rgba(244,114,182,0.28),transparent 42%),radial-gradient(circle at 70% 95%,rgba(253,186,116,0.35),transparent 45%),#fbf8ff;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sharon Thomas - Python Full-Stack Developer based in Kochi, Kerala.">
+<title>Sharon Thomas | Python Full-Stack Developer</title>
+
+<!-- All styling is inline on the elements. This tiny block only holds @keyframes,
+     which cannot be written as inline styles. -->
+<style>
+@keyframes fadeUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes blobMove{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.15)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(236,72,153,0.55)}100%{box-shadow:0 0 0 14px rgba(236,72,153,0)}}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(16deg)}20%,40%{transform:rotate(-10deg)}50%{transform:rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}[data-level]{width:80%!important}</style></noscript>
+</head>
+
+<body style="margin:0;padding:0;box-sizing:border-box;background:var(--bg);color:var(--text);font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s ease,color .4s ease;">
+
+<!-- Scroll progress bar -->
+<div id="progress" style="position:fixed;top:0;left:0;height:4px;width:0;z-index:200;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316);transition:width .1s linear;"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header style="position:sticky;top:0;z-index:100;background:var(--nav);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:background .4s ease,border-color .4s ease;">
+  <nav style="max-width:1100px;margin:0 auto;padding:12px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+    <a href="#home" style="text-decoration:none;font-weight:800;font-size:20px;letter-spacing:0.5px;background:linear-gradient(135deg,#7c3aed,#ec4899 60%,#f97316);-webkit-background-clip:text;background-clip:text;color:transparent;">Sharon Thomas</a>
+
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;font-size:14px;font-weight:600;">
+      <a href="#about" style="text-decoration:none;color:var(--muted);">About</a>
+      <a href="#skills" style="text-decoration:none;color:var(--muted);">Skills</a>
+      <a href="#experience" style="text-decoration:none;color:var(--muted);">Experience</a>
+      <a href="#education" style="text-decoration:none;color:var(--muted);">Education</a>
+      <a href="#contact" style="text-decoration:none;color:var(--muted);">Contact</a>
+
+      <!-- Day / Night toggle -->
+      <button id="themeToggle" type="button" aria-label="Switch between day and night mode" title="Switch day / night mode" style="position:relative;width:68px;height:34px;padding:0;border:1px solid var(--line);border-radius:999px;cursor:pointer;background:var(--card);box-shadow:var(--shadow);transition:background .4s ease,border-color .4s ease;">
+        <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:13px;opacity:0.55;">&#9728;&#65039;</span>
+        <span style="position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:13px;opacity:0.55;">&#127769;</span>
+        <span id="themeKnob" style="position:absolute;top:3px;left:4px;width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 3px 10px rgba(168,85,247,0.45);transition:left .35s cubic-bezier(.6,-0.3,.3,1.3);">&#9728;&#65039;</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" style="position:relative;overflow:hidden;background:var(--hero);padding:90px 24px 100px;transition:background .4s ease;">
+  <!-- floating colour blobs -->
+  <div style="position:absolute;top:-80px;left:-60px;width:280px;height:280px;border-radius:50%;background:#a78bfa;filter:blur(70px);opacity:0.30;animation:blobMove 11s ease-in-out infinite;pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-90px;right:-40px;width:300px;height:300px;border-radius:50%;background:#fb923c;filter:blur(80px);opacity:0.25;animation:blobMove 14s ease-in-out infinite reverse;pointer-events:none;"></div>
+
+  <div style="position:relative;max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:48px;">
+
+    <div style="flex:1 1 380px;min-width:280px;">
+      <span style="display:inline-block;padding:6px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent);font-size:13px;font-weight:700;letter-spacing:0.6px;box-shadow:var(--shadow);animation:fadeUp .8s ease both;transition:background .4s ease;"><span style="display:inline-block;transform-origin:70% 70%;animation:wave 2.4s ease-in-out 1s infinite;">&#128075;</span> Hello, I'm</span>
+      <h1 style="margin:18px 0 6px;font-size:clamp(40px,7vw,68px);line-height:1.08;font-weight:900;letter-spacing:-1px;background:linear-gradient(120deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:250% 250%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:fadeUp .9s ease .15s both,gradientShift 7s ease infinite;">Sharon Thomas</h1>
+      <h2 style="margin:0 0 18px;font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--text);animation:fadeUp .9s ease .3s both;">Python Full-Stack Developer</h2>
+      <p style="margin:0 0 30px;font-size:17px;color:var(--body);max-width:520px;animation:fadeUp .9s ease .45s both;">I build practical web applications with Python, Django and MySQL, bringing an organised, detail-focused mindset from years of professional experience in administration and operations.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;animation:fadeUp .9s ease .6s both;">
+        <a href="#contact" data-lift style="display:inline-block;padding:13px 30px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;background:linear-gradient(135deg,#7c3aed,#ec4899);box-shadow:0 10px 24px rgba(168,85,247,0.30);transition:transform .3s ease,box-shadow .3s ease;">Get in Touch</a>
+        <a href="#skills" data-lift style="display:inline-block;padding:12px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;color:var(--accent);background:var(--card);border:2px solid var(--line);transition:transform .3s ease,box-shadow .3s ease,background .4s ease;">View Skills</a>
+      </div>
+      <p style="margin:26px 0 0;font-size:14px;color:var(--muted);animation:fadeUp .9s ease .75s both;">&#128205; Kochi, Kerala, India</p>
+    </div>
+
+    <!-- Monogram with spinning gradient ring -->
+    <div style="flex:0 1 290px;display:flex;justify-content:center;animation:fadeUp 1s ease .4s both;">
+      <div style="position:relative;width:250px;height:250px;animation:float 5s ease-in-out infinite;">
+        <div style="position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);animation:spin 8s linear infinite;box-shadow:0 24px 50px rgba(168,85,247,0.30);"></div>
+        <div style="position:absolute;inset:10px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;transition:background .4s ease;">
+          <span style="font-size:76px;font-weight:900;letter-spacing:2px;background:linear-gradient(135deg,#7c3aed,#ec4899 60%,#f97316);-webkit-background-clip:text;background-clip:text;color:transparent;">ST</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" style="scroll-margin-top:70px;padding:80px 24px 30px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p data-reveal style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:#ec4899;opacity:0;transform:translateY(30px);">ABOUT ME</p>
+    <h2 data-reveal data-delay="0.1" style="margin:6px 0 24px;font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--text);opacity:0;transform:translateY(30px);">Who I am</h2>
+
+    <div data-reveal data-delay="0.2" style="background:var(--card);border:1px solid var(--border);border-radius:22px;padding:34px;box-shadow:var(--shadow);border-left:6px solid #a78bfa;opacity:0;transform:translateY(30px);">
+      <p style="margin:0 0 16px;font-size:17px;color:var(--body);">I'm an aspiring Python Full-Stack Developer with hands-on learning in Python, Django, MySQL, REST API development, CRUD applications, Git/GitHub, HTML and CSS.</p>
+      <p style="margin:0 0 16px;font-size:17px;color:var(--body);">I'm an experienced professional transitioning into IT, with a background in administration, documentation, customer coordination and operational support. I bring strong problem-solving, communication, organisation and attention-to-detail skills, with a focus on building practical web applications and growing in a software development role.</p>
+      <p style="margin:0;font-size:15px;color:var(--accent);font-weight:700;">&#127919; Looking for roles as: Python Developer &middot; Python Full-Stack Developer &middot; Junior Django Developer</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" style="scroll-margin-top:70px;padding:60px 24px 30px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p data-reveal style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:#ec4899;opacity:0;transform:translateY(30px);">TECHNICAL SKILLS</p>
+    <h2 data-reveal data-delay="0.1" style="margin:6px 0 28px;font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--text);opacity:0;transform:translateY(30px);">What I work with</h2>
+
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:24px;padding:34px;box-shadow:var(--shadow);transition:background .4s ease,border-color .4s ease;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px 44px;">
+
+        <div data-reveal data-delay="0" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#128013; Python</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="80" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.08" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#127807; Django</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="75" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.16" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#128279; REST APIs</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="70" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.24" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#128451;&#65039; MySQL</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="75" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.32" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#129521; HTML</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="85" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.4" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#127912; CSS</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="70" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.48" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#128256; Git &amp; GitHub</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="70" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+        <div data-reveal data-delay="0.56" style="opacity:0;transform:translateY(30px);">
+          <div style="display:flex;justify-content:space-between;margin-bottom:9px;font-weight:700;color:var(--text);"><span>&#129513; OOP in Python</span><span data-pct style="color:var(--accent);">0%</span></div>
+          <div style="height:11px;border-radius:999px;background:var(--track);overflow:hidden;"><div data-level="70" style="height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f97316,#ec4899,#7c3aed);background-size:300% 100%;animation:gradientShift 5s ease infinite;transition:width 1.5s cubic-bezier(.22,1,.36,1);"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" style="scroll-margin-top:70px;padding:60px 24px 30px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p data-reveal style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:#ec4899;opacity:0;transform:translateY(30px);">PROFESSIONAL EXPERIENCE</p>
+    <h2 data-reveal data-delay="0.1" style="margin:6px 0 30px;font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--text);opacity:0;transform:translateY(30px);">Where I've worked</h2>
+
+    <div style="border-left:3px solid var(--line);padding-left:28px;margin-left:8px;">
+
+      <div data-reveal style="position:relative;margin-bottom:28px;opacity:0;transform:translateX(-30px);">
+        <span style="position:absolute;left:-40px;top:26px;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);border:3px solid var(--bg);animation:pulse 2s ease-out infinite;"></span>
+        <div data-lift style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 28px;box-shadow:var(--shadow);">
+          <h3 style="margin:0;font-size:20px;color:var(--text);">Administrative Coordinator</h3>
+          <p style="margin:2px 0 14px;font-weight:700;color:var(--accent);">Spectrum Softech Solutions Pvt. Ltd.</p>
+          <ul style="margin:0;padding-left:20px;color:var(--body);">
+            <li style="margin-bottom:6px;">Managed office administration, records, schedules, and daily operational activities.</li>
+            <li>Supported documentation, reporting, coordination, and smooth workflow across activities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="0.1" style="position:relative;margin-bottom:28px;opacity:0;transform:translateX(-30px);">
+        <span style="position:absolute;left:-40px;top:26px;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);border:3px solid var(--bg);animation:pulse 2s ease-out .4s infinite;"></span>
+        <div data-lift style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 28px;box-shadow:var(--shadow);">
+          <h3 style="margin:0;font-size:20px;color:var(--text);">Bank Coordinator</h3>
+          <p style="margin:2px 0 14px;font-weight:700;color:var(--accent);">Fintrestle, Ernakulam</p>
+          <ul style="margin:0;padding-left:20px;color:var(--body);">
+            <li style="margin-bottom:6px;">Coordinated banking documentation, customer follow-ups, record maintenance, and timely document processing.</li>
+            <li>Supported customer service and administrative functions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="0.1" style="position:relative;margin-bottom:28px;opacity:0;transform:translateX(-30px);">
+        <span style="position:absolute;left:-40px;top:26px;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);border:3px solid var(--bg);animation:pulse 2s ease-out .8s infinite;"></span>
+        <div data-lift style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 28px;box-shadow:var(--shadow);">
+          <h3 style="margin:0;font-size:20px;color:var(--text);">Customer Service Executive</h3>
+          <p style="margin:2px 0 14px;font-weight:700;color:var(--accent);">Bhavani Shipping Services</p>
+          <ul style="margin:0;padding-left:20px;color:var(--body);">
+            <li style="margin-bottom:6px;">Handled customer communications, service requests, query resolution, and service records.</li>
+            <li>Supported operational coordination and documentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="0.1" style="position:relative;opacity:0;transform:translateX(-30px);">
+        <span style="position:absolute;left:-40px;top:26px;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);border:3px solid var(--bg);animation:pulse 2s ease-out 1.2s infinite;"></span>
+        <div data-lift style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 28px;box-shadow:var(--shadow);">
+          <h3 style="margin:0;font-size:20px;color:var(--text);">Documentation Executive</h3>
+          <p style="margin:2px 0 14px;font-weight:700;color:var(--accent);">Worldwide Handling Agencies</p>
+          <ul style="margin:0;padding-left:20px;color:var(--body);">
+            <li style="margin-bottom:6px;">Managed shipping and office documentation and maintained accurate records.</li>
+            <li>Coordinated document flow between departments and stakeholders.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" style="scroll-margin-top:70px;padding:60px 24px 30px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p data-reveal style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:#ec4899;opacity:0;transform:translateY(30px);">EDUCATION</p>
+    <h2 data-reveal data-delay="0.1" style="margin:6px 0 28px;font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--text);opacity:0;transform:translateY(30px);">Academic background</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;">
+
+      <div data-reveal data-delay="0" data-lift style="background:linear-gradient(135deg,#7c3aed,#ec4899,#f97316);background-size:200% 200%;animation:gradientShift 8s ease infinite;border-radius:20px;padding:30px;color:#fff;box-shadow:0 14px 32px rgba(168,85,247,0.25);opacity:0;transform:translateY(30px);">
+        <p style="margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:1px;opacity:0.9;">2010 &ndash; 2013</p>
+        <h3 style="margin:0 0 6px;font-size:22px;">&#127891; B.Sc. in Physics</h3>
+        <p style="margin:0;opacity:0.95;">Mahatma Gandhi University</p>
+      </div>
+
+      <div data-reveal data-delay="0.12" data-lift style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;box-shadow:var(--shadow);display:flex;align-items:center;opacity:0;transform:translateY(30px);">
+        <h3 style="margin:0;font-size:21px;color:var(--text);">&#128218; Higher Secondary Education</h3>
+      </div>
+
+      <div data-reveal data-delay="0.24" data-lift style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;box-shadow:var(--shadow);display:flex;align-items:center;opacity:0;transform:translateY(30px);">
+        <h3 style="margin:0;font-size:21px;color:var(--text);">&#127979; SSLC</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRENGTHS ============ -->
+<section id="strengths" style="scroll-margin-top:70px;padding:60px 24px 30px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <p data-reveal style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:#ec4899;opacity:0;transform:translateY(30px);">CAREER STRENGTHS</p>
+    <h2 data-reveal data-delay="0.1" style="margin:6px 0 28px;font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--text);opacity:0;transform:translateY(30px);">What I bring to a team</h2>
+
+    <div style="display:flex;flex-wrap:wrap;gap:14px;">
+      <span data-reveal data-delay="0" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #c4b5fd;color:var(--accent);font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Problem Solving</span>
+      <span data-reveal data-delay="0.07" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #f9a8d4;color:#ec4899;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Communication</span>
+      <span data-reveal data-delay="0.14" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #fdba74;color:#f97316;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Adaptability</span>
+      <span data-reveal data-delay="0.21" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #5eead4;color:#14b8a6;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Organization</span>
+      <span data-reveal data-delay="0.28" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #a5b4fc;color:#6366f1;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Attention to Detail</span>
+      <span data-reveal data-delay="0.35" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #d8b4fe;color:#a855f7;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Team Coordination</span>
+      <span data-reveal data-delay="0.42" data-lift style="padding:11px 22px;border-radius:14px;background:var(--card);border:1px solid #fda4af;color:#f43f5e;font-weight:700;font-size:15px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px) scale(.9);">Time Management</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="scroll-margin-top:70px;padding:70px 24px 90px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div data-reveal style="position:relative;overflow:hidden;border-radius:28px;padding:56px 32px;text-align:center;background:linear-gradient(120deg,#6d28d9,#c026d3,#f97316,#c026d3,#6d28d9);background-size:250% 250%;animation:gradientShift 10s ease infinite;box-shadow:0 24px 56px rgba(168,85,247,0.30);opacity:0;transform:translateY(40px);">
+      <p style="margin:0;font-size:13px;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,0.85);">CONTACT</p>
+      <h2 style="margin:8px 0 14px;font-size:clamp(28px,4.5vw,42px);font-weight:800;color:#fff;">Let's work together</h2>
+      <p style="margin:0 auto 32px;max-width:540px;font-size:17px;color:rgba(255,255,255,0.92);">I'm open to opportunities as a Python Developer, Python Full-Stack Developer or Junior Django Developer. Feel free to reach out.</p>
+
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+        <a href="mailto:sharonkallarakkal91@gmail.com" data-lift style="display:inline-block;padding:14px 28px;border-radius:14px;background:#fff;color:#6d28d9;text-decoration:none;font-weight:700;font-size:15px;box-shadow:0 10px 24px rgba(0,0,0,0.15);transition:transform .3s ease,box-shadow .3s ease;">&#9993;&#65039; sharonkallarakkal91@gmail.com</a>
+        <a href="tel:+916238733664" data-lift style="display:inline-block;padding:14px 28px;border-radius:14px;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;text-decoration:none;font-weight:700;font-size:15px;transition:transform .3s ease,box-shadow .3s ease;">&#128222; +91 6238733664</a>
+      </div>
+      <p style="margin:26px 0 0;font-size:14px;color:rgba(255,255,255,0.88);">&#128205; Kochi, Kerala, India</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="text-align:center;padding:28px 24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;background:var(--card);transition:background .4s ease,border-color .4s ease;">
+  &copy; 2026 Sharon Thomas &middot; Python Full-Stack Developer
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  /* ---------- Day / Night theme ---------- */
+  var themes = {
+    light: {
+      '--bg':'#fbf8ff','--text':'#2b2540','--body':'#4a4163','--muted':'#7a7192','--card':'#ffffff',
+      '--border':'#efe7ff','--line':'#e3d4ff','--track':'#efe7ff','--accent':'#7c3aed',
+      '--nav':'rgba(251,248,255,0.85)','--shadow':'0 10px 28px rgba(124,58,237,0.07)',
+      '--hero':'radial-gradient(circle at 12% 18%,rgba(167,139,250,0.35),transparent 45%),radial-gradient(circle at 88% 12%,rgba(244,114,182,0.28),transparent 42%),radial-gradient(circle at 70% 95%,rgba(253,186,116,0.35),transparent 45%),#fbf8ff'
+    },
+    dark: {
+      '--bg':'#120f1f','--text':'#f3eefe','--body':'#cfc6e6','--muted':'#a79dc6','--card':'#1c1730',
+      '--border':'#2e2750','--line':'#3d3270','--track':'#2a2347','--accent':'#b794ff',
+      '--nav':'rgba(18,15,31,0.85)','--shadow':'0 10px 28px rgba(0,0,0,0.40)',
+      '--hero':'radial-gradient(circle at 12% 18%,rgba(124,58,237,0.30),transparent 45%),radial-gradient(circle at 88% 12%,rgba(236,72,153,0.20),transparent 42%),radial-gradient(circle at 70% 95%,rgba(249,115,22,0.16),transparent 45%),#120f1f'
+    }
+  };
+  var knob = document.getElementById('themeKnob');
+  var toggle = document.getElementById('themeToggle');
+  var mode = 'light';
+
+  function applyTheme(m) {
+    mode = m;
+    var t = themes[m];
+    for (var k in t) { root.style.setProperty(k, t[k]); }
+    root.style.colorScheme = m;
+    knob.style.left = (m === 'dark') ? '38px' : '4px';
+    knob.innerHTML = (m === 'dark') ? '&#127769;' : '&#9728;&#65039;';
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('portfolio-theme'); } catch (e) {}
+  if (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { saved = 'dark'; }
+  applyTheme(saved === 'dark' ? 'dark' : 'light');
+
+  toggle.addEventListener('click', function () {
+    var next = (mode === 'dark') ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem('portfolio-theme', next); } catch (e) {}
+  });
+
+  /* ---------- Scroll progress bar ---------- */
+  var bar = document.getElementById('progress');
+  function updateProgress() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  /* ---------- Hover lift ---------- */
+  document.querySelectorAll('[data-lift]').forEach(function (el) {
+    var hasTransform = el.hasAttribute('data-reveal');
+    el.addEventListener('mouseenter', function () {
+      if (hasTransform && el.dataset.ready !== '1') return;
+      el.style.transform = 'translateY(-6px)';
+      el.style.boxShadow = '0 18px 38px rgba(168,85,247,0.28)';
+    });
+    el.addEventListener('mouseleave', function () {
+      if (hasTransform && el.dataset.ready !== '1') return;
+      el.style.transform = 'none';
+      el.style.boxShadow = '';
+    });
+  });
+
+  /* ---------- Reveal on scroll + skill bars ---------- */
+  function countUp(el, target) {
+    var start = null, dur = 1500;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + '%';
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function reveal(el) {
+    var delay = parseFloat(el.dataset.delay || 0);
+    el.style.transition = 'opacity .8s ease ' + delay + 's, transform .8s cubic-bezier(.22,1,.36,1) ' + delay + 's';
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+
+    var fill = el.querySelector('[data-level]');
+    if (fill) {
+      var level = parseInt(fill.dataset.level, 10);
+      setTimeout(function () {
+        fill.style.width = level + '%';
+        var pct = el.querySelector('[data-pct]');
+        if (pct) countUp(pct, level);
+      }, delay * 1000 + 250);
+    }
+
+    setTimeout(function () {
+      el.dataset.ready = '1';
+      el.style.transition = 'transform .3s ease, box-shadow .3s ease, background .4s ease, border-color .4s ease, color .4s ease';
+    }, (delay + 0.9) * 1000);
+  }
+
+  var items = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { reveal(en.target); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(reveal);
+  }
+})();
+</script>
+
+</body>
+</html>
